@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="scorpio.com.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer"
+
+        >
+        <Button
+            android:id="@+id/addnote"
+            android:layout_height="52dp"
+            android:layout_width="match_parent"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:elevation="4dp"
+            android:padding="8dp"
+            android:text="ADD"
+            />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_margin="8dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>
